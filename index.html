@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/frame.css" />
     <link rel="stylesheet" href="./assets/css/media.css" />
     <!---->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <!--jquery-->
 <script src="./jquery/js/jquery-3.7.1.js"></script>
@@ -64,8 +65,8 @@
                     <label for="nome">Nome completo</label>
                     <input type="text" id="nome" placeholder="Digite seu nome" required>
                     <label for="data">Selecione a data desejada</label>
-                    <input type="date" id="data" required>
-                    <label for="unidade">Selecione uma unidade</label>
+                      <input type="text" id="datepicker" placeholder="Selecione uma data" />
+                      <label for="unidade">Selecione uma unidade</label>
                     <select id="unidade">
                         <option value="">Rua Grande, Natal - RN</option>
                         <option value="">Av. Central, João Pessoa - PB</option>
@@ -289,6 +290,18 @@
 
     </footer>
     <!---->
+
+  
+    <script>
+      flatpickr("#datepicker", {
+        dateFormat: "d/m/Y", // Formato: 20/08/2025
+        locale: {
+          firstDayOfWeek: 1
+        }
+      });
+    </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <!-- SweetAlert2 -->
      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
