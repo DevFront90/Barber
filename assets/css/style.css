@@ -207,7 +207,7 @@ main.main-content .date-btn a i {
 }
 
 .opacity-modal {
-    display:none;
+  
     width: 100%;
     height: 100%;
     position: fixed;
@@ -220,7 +220,7 @@ main.main-content .date-btn a i {
 }
 
 .modal-content {
-      display:none;
+    display:none;
     width: 90%;
     max-width: 400px;
     padding: 30px;
