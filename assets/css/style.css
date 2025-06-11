@@ -260,7 +260,6 @@ form label {
 }
 
 .modal-content input[type="text"],
-.modal-content input[type="date"],
 .modal-content select {
     width: 100%;
     padding: 10px;
