@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image-x/png" href="./assets/img/Logo 2.png">
+    <title>Barber - Onde o cuidado com seu estilo começa.</title>
+    <!--link css-->
+    <link rel="stylesheet" href="./assets/css/resete.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/frame.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <!---->
+</head>
+<!--jquery-->
+<script src="./jquery/js/jquery-3.7.1.js"></script>
+<!---->
+
+<body>
+    <!--header-->
+    <header class="site-topbar">
+        <div class="container-page">
+            <div class="flex-menu">
+                <div class="left-navigation">
+                    <div class="logo-brand">
+                        <img src="./assets/img/logo-white 1.png" alt="logo-white" />
+                    </div>
+                    <nav class="nav-desktop">
+                        <ul>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#equipe">Equipe</a></li>
+                            <li><a href="#Unidade">Unidades</a></li>
+                        </ul>
+                    </nav>
+                    <nav style="background-image: url('./assets/img/menu-mobile.png');" class="nav-mobile">
+                        <ul>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#equipe">Equipe</a></li>
+                            <li><a href="#Unidade">Unidades</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="right-btn">
+                    <a href="#">Entre em contato <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!---->
+
+    <!--main main-content-->
+    <main
+        style="background-image: linear-gradient(to bottom, rgba(13, 18, 30, 0.37) 60%, rgb(13, 18, 30,0.6) 100%), url('./assets/img/imagem-banner.png');"
+        class="main-content">
+        <div class="opacity-modal" id="modalAgendamento">
+            <div class="modal-content">
+                <span class="close-modal" id="closeModal">&times</span>
+                <h2>Agendar horário</h2>
+                <form id="formAgendamento">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    <label for="data">Selecione a data desejada</label>
+                    <input type="date" id="data" required>
+                    <label for="unidade">Selecione uma unidade</label>
+                    <select id="unidade">
+                        <option value="">Rua Grande, Natal - RN</option>
+                        <option value="">Av. Central, João Pessoa - PB</option>
+                        <option value="">Rua da Harmonia, Recife - PE</option>
+                    </select>
+                    <div class="horarios-date">
+                        <button type="button" class="hora-btn">09:00</button>
+                        <button type="button" class="hora-btn">10:00</button>
+                        <button type="button" class="hora-btn">11:00</button>
+                        <button type="button" class="hora-btn">12:00</button>
+                        <button type="button" class="hora-btn">13:00</button>
+                    </div>
+                    <input type="hidden" id="horaSelecionada" name="horaSelecionada" required>
+                    <button type="submit" class="btn-agendar">Agendar</button>
+                </form>
+            </div>
+        </div>
+       <div class="container-page">
+            <div class="wraper-position">
+                <div class="title-head">
+                    <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
+                    <p>Horário de funcionamento: <span> 09:00</span> ás <span> 18:00</span></p>
+                </div>
+                <div class="date-btn">
+                    <a href="#">Agendar horário <i class="fa-solid fa-calendar-days"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!---->
+
+    <!--section session-one-->
+    <section id="sobre" class="session-one">
+
+        <div class="container-page">
+            <div class="flex-about">
+                <div class="imagem-about">
+                    <img src="./assets/img/imagem-about.png" alt="imagem-about" />
+                </div>
+                <div class="text-about">
+                    <h2>Sobre</h2>
+                    <p>Na Barber, sua experiência é a nossa prioridade! Criamos um ambiente que é o refúgio perfeito
+                        para o homem moderno. Aqui, você encontra o corte e a barba perfeitos, além de um tempo para
+                        relaxar e se desconectar. </p>
+                    <p>Usamos produtos de alta qualidade e estamos sempre atualizados nas últimas tendências para
+                        garantir que você saia não apenas com um ótimo visual, mas também renovado.</p>
+                    <h3>Horário de funcionamento: <span>09:00</span> ás <span>18:00</span> </h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!---->
+    <!--section services now-->
+    <section id="servicos" class="services-now">
+        <div class="container-page">
+            <div class="title-services">
+                <h2>Serviços</h2>
+                <p>Na Barber, oferecemos os melhores serviços para o seu estilo. Nossos barbeiros são especialistas em:
+                </p>
+            </div>
+            <div class="flex-options">
+
+                <div class="card-overall">
+                    <div class="box-fill">
+                        <img src="./assets/img/services1.png" alt="services1">
+                    </div>
+                    <div class="name-price">
+                        <h3>Corte de cabelo</h3>
+                        <div class="number-marker">
+                            <p>R$35,90</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-overall">
+                    <div class="box-fill">
+                        <img src="./assets/img/services2.png" alt="services1">
+                    </div>
+                    <div class="name-price">
+                        <h3>Barba feita</h3>
+                        <div class="number-marker">
+                            <p>R$35,90</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-overall">
+                    <div class="box-fill">
+                        <img src="./assets/img/services3.png" alt="services1">
+                    </div>
+                    <div class="name-price">
+                        <h3>Design de listras</h3>
+                        <div class="number-marker">
+                            <p>R$35,90</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!---->
+
+    <!--section team-barbe-->
+    <section id="equipe" class="team-barbe">
+        <div class="container-page">
+            <div class="flex-team">
+                <div class="title-vertical">
+                    <h2>nossa equipe</h2>
+                </div>
+                <div class="division-team">
+
+                    <div class="employees-prominence">
+                        <div class="imagem-barbers">
+                            <img src="./assets/img/img1.png" alt="img1" />
+                            <div class="name-employees">
+                                <h3>Victor Silva</h3>
+                            </div>
+                        </div>
+                        <div class="icons-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+
+                    <div class="employees-prominence">
+                        <div class="imagem-barbers">
+                            <img src="./assets/img/img2.png" alt="img2" />
+                            <div class="name-employees">
+                                <h3>André Pires</h3>
+                            </div>
+                        </div>
+                        <div class="icons-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+
+                    <div class="employees-prominence">
+                        <div class="imagem-barbers">
+                            <img src="./assets/img/img3.png" alt="img3" />
+                            <div class="name-employees">
+                                <h3>Lucas Paes</h3>
+                            </div>
+                        </div>
+                        <div class="icons-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+
+                    <div class="employees-prominence">
+                        <div class="imagem-barbers">
+                            <img src="./assets/img/img4.png" alt="img4" />
+                            <div class="name-employees">
+                                <h3>Lauis Rocha</h3>
+                            </div>
+                        </div>
+                        <div class="icons-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---->
+
+    <!--footer-->
+    <footer id="Unidade">
+
+        <div class="container-page">
+            <div class="title-footer">
+                <h2>nossas unidades</h2>
+            </div>
+
+            <div class="flex-footer">
+
+                <div class="imagem-footer1">
+                    <img src="./assets/img/location1.png" alt="location1">
+                    <div class="text-footer1">
+                        <h3>Rua das cores,n120</h3>
+                        <p>Natal - RN</p>
+                    </div>
+                </div>
+
+                <div class="imagem-footer2">
+                    <img src="./assets/img/location2.png" alt="location2">
+                    <div class="text-footer2">
+                        <h3>Rua grande,n14</h3>
+                        <p>Natal - RN</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="center-position">
+
+                <div class="info-footer">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+
+                <div class="logo-footer">
+                    <img src="./assets/img/Logo 2.png" alt="logo2">
+                    <div class="btn-whatsapp">
+                        <img src="./assets/img/whatsapp.png" alt="whatsapp" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!---->
+
+    <!-- SweetAlert2 -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!---->
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/b8f9f3da7a.js" crossorigin="anonymous"></script>
+    <!---->
+    <!--script js-->
+    <script src="./assets/js/function.js"></script>
+    <script src="./assets/js/button.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <!---->
+</body>
+
+</html>
