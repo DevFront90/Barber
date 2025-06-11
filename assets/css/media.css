@@ -98,22 +98,9 @@
    }
 
   
-   form.form-suface .hours-check  {
-     grid-template-columns: repeat(2,1fr);
-   }
+   
 
-   form.form-suface {
-    width: 94%;
-    max-width: 430px;
-    padding:30px 2%;
-    height: 650px;
-    border-radius:8px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color:var(--color-one);
-}
+
    
 }
 
